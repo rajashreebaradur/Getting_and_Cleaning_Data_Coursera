@@ -25,3 +25,20 @@ if(!file.exists(results_folder)){
         print("Creating results folder..")
         dir.create(results_folder)
 }
+
+# Convert text files to data frames
+data_tables <- function(filename, cols = NULL){
+        print(paste("Getting table:", filename))
+        data_files <- paste(data_folder, filename, sep = "/")
+        data <- data.frame()
+        if(is.null(cols)){
+                data <- read.table(data_files, sep = "", stringsAsFactors = F)
+        }
+        else {
+                data <- read.table(data_files, sep = "", stringsAsFactors = F, col.names = cols)
+        }
+        data
+}
+
+# Check features of the data_tables
+features <- data_tables("features.txt")

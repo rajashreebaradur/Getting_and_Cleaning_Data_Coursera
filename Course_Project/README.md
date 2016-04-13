@@ -27,3 +27,4 @@ You should create one R script called run_analysis.R that does the following.
 - CodeBook.md: This is a code book for the project consisting of the detailed description of the R program file and the results.
 - data.zip: This is the zipped data file downloaded from the given url.
 - run_analysis.R: This is the R script consisting of all the functions and expressions used to get the desired results for this         project.
+- tidy_dataset.txt: A .txt output of tidy_dataset.csv result.
